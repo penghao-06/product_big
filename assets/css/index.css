@@ -3,3 +3,95 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* body {
+    padding: 0px 15px;
+} */
+
+/* 底部区域文本水平居中 */
+.layui-footer {
+    text-align: center;
+}
+
+.layui-logo {
+    padding-left: 30px;
+    background: url(/assets/images/logo.png) no-repeat top center;
+}
+
+.iconfont {
+    margin-right: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    /* 强制清除css3的动画 */
+    transform: none !important;
+}
+
+.userinfo {
+    height: 60px;
+    text-align: center;
+    /* 不允许复制 */
+    line-height: 60px;
+    user-select: none;
+}
+
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #282b33;
+}
+
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-text {
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.header-img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    font-size: 20px;
+    top: 3px;
+    margin-right: 15px;
+}
+
+.layui-side-scroll {
+    width: 200px;
+    overflow: hidden;
+}
+
+.layui-nav-item dl dd a {
+    text-indent: 30px;
+}
+
+.iconfont {
+    font-size: 20px;
+}
+
+.icon-tuichu {
+    vertical-align: middle;
+
+}
+
+.layui-icon-app {
+    margin-right: 10px;
+}

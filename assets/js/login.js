@@ -39,9 +39,10 @@ $(function () {
             success: function (backData) {
                 if (backData.status !== 0) return layer.msg(backData.message)
                 layer.msg(backData.message)
+                $(this)[0].reset()
                 //手动调用click事件
                 $('#login-btn').click()
-            }
+            }.bind(this)
         });
     });
     $('#login-box-item').on('submit', function (e) {
@@ -52,6 +53,7 @@ $(function () {
             dataType: 'json',
             data: $(this).serialize(),
             success: function (backData) {
+                console.log(backData);
                 if (backData.status !== 0) return layer.msg(backData.message)
                 localStorage.setItem('token', backData.token)
                 location.href = '/index.html'
